@@ -1,0 +1,48 @@
+ul {
+    width: 75px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin-top: 9px;
+    padding: 0px;
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 10pt; /* Размер названий в пункте меню */
+    }
+    li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 65px; /* Сдвигаем подменю вправо */
+    margin-top: -2em; /* Сдвигаем подменю вверх */
+    }
+    li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 3px;
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #666; /* Цвет текста */
+    background-color: #f0f0f0; /* Цвет фона */
+    }
+    li a:hover {
+    color: rgba(214, 10, 34, 1); /* Цвет текста активного пункта */
+    background-color: rgba(214, 10, 34, 1); /* Цвет фона активного пункта */
+    }
+    li:hover ul {
+    display: block;
+    }
+
+   .gradient-all {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, rgba(255, 48, 57, 1) 40%, rgba(0, 48, 57, 1) 50%);
+  border-image-slice: 1;
+}
+.gradient-min {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+}

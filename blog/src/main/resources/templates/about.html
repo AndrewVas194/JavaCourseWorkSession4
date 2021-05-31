@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+    <link rel="icon" href="https://st4.depositphotos.com/5040187/19757/v/600/depositphotos_197571650-stock-illustration-fs-logo-swoosh-global-red.jpg" sizes="16x16">
+    <style>
+    H3 {
+    text-indent: 0.8em;
+   }
+    P {
+    text-indent: 1.5em;
+   }
+    ul {
+    width: 75px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin-top: 9px;
+    padding: 0px;
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 10pt; /* Размер названий в пункте меню */
+    }
+    li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 65px; /* Сдвигаем подменю вправо */
+    margin-top: -2em; /* Сдвигаем подменю вверх */
+    }
+    li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 3px;
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #666; /* Цвет текста */
+    background-color: #f0f0f0; /* Цвет фона */
+    }
+    li a:hover {
+    color: rgba(214, 10, 34, 1); /* Цвет текста активного пункта */
+    background-color: rgba(214, 10, 34, 1); /* Цвет фона активного пункта */
+    }
+    li:hover ul {
+    display: block;
+    }
+.gradient-all {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, rgba(255, 48, 57, 1) 40%, rgba(0, 48, 57, 1) 50%);
+  border-image-slice: 1;
+}
+.gradient-min {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<header th:insert="blocks/header::header"></header>
+<div class="back">
+<table width="100%" border="0" cellpadding="4">
+   <tr align="right" valign="top">
+   <td align="left"> <h3><b>Обо мне:</b></h3>
+    <br>
+    <p>Студент группы ПОИТ-194, <i>Василевич Андрей</i></p>
+       <p>Гродненского государственного <a href="https://www.grsu.by/">университета</a> имени Янки Купала</p>
+        <p>   Контактные данные MTC +375(29)***-**-20,  Velcom +375(29)***-**-20
+       </p>
+   </td>
+       <td align="left">
+           <h4 align="left"><b>Проект:</b></h4>
+           <img src="https://lh3.googleusercontent.com/0NWVBx4oXw56RX8JCoH_ShJuHEC6g3DF7ziH7FbcvpGUC7v4fwcrjNZI9K76ERrtNOkyMg=s151" height="185" width="450">
+       </td>
+
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+    <link rel="icon" href="https://st4.depositphotos.com/5040187/19757/v/600/depositphotos_197571650-stock-illustration-fs-logo-swoosh-global-red.jpg" sizes="16x16">
+<style>
+h4 {
+    text-indent: 2em;
+}
+P {
+    text-indent: 1.5em;
+   }
+    ul {
+    width: 75px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin-top: 9px;
+    padding: 0px;
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 10pt; /* Размер названий в пункте меню */
+    }
+    li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 65px; /* Сдвигаем подменю вправо */
+    margin-top: -2em; /* Сдвигаем подменю вверх */
+    }
+    li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 3px;
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: #666; /* Цвет текста */
+    background-color: #f0f0f0; /* Цвет фона */
+    }
+    li a:hover {
+    color: rgba(214, 10, 34, 1); /* Цвет текста активного пункта */
+    background-color: rgba(214, 10, 34, 1); /* Цвет фона активного пункта */
+    }
+    li:hover ul {
+    display: block;
+    }
+
+   .gradient-all {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, rgba(255, 48, 57, 1) 40%, rgba(0, 48, 57, 1) 50%);
+  border-image-slice: 1;
+}
+.gradient-min {
+  font-size: 1em;
+  background: linear-gradient(135deg, rgba(255, 48, 57, 1) 35%, rgba(0, 48, 57, 1) 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+}
+.back{
+background: url(https://sun9-40.userapi.com/impg/7xGHsLiXFWUUe_plM0unjy8LzBCO5-5UkTUT8g/J-we0mv0okk.jpg?size=1024x258&quality=96&sign=208803dfed834eb1c7d3d2741c5221b9&type=album) no-repeat;
+height:240px;
+width:100%;
+}
+
+</style>
+</head>
+<body>
+
+<header th:insert="blocks/header::header"></header>
+
+<main style="background-color:rgba(0, 133, 255, 0.7)">
+    <div class="back text-align-center container">
+        <section class="py-5 text-align-center container">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                    </div>
+        </section>
+    </div>
+</main>
+
+
+<div class="video" style="margin-top:45px">
+    <table width="100%" border="0" cellpadding="4">
+        <tr>
+            <td align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gZBM5MGJQpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iVguwi4R2b0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="video" style="margin-top:45px">
+    <table width="100%" border="0" cellpadding="4">
+        <tr>
+            <td align="center">
+                <h4 align="left" >Как физические нагрузки влияют на иммунитет?</h4>
+                    <p align="justify" style="width:750px">
+                        Сотрудники университета штата Айова, США в 2009 году провели эксперимент, чтобы выяснить, каким образом тренировки влияют на иммунную систему. Для исследования были отобраны три группы мышей.<br>
+                        При этом первой группе не давали никаких дополнительных нагрузок, вторая на протяжении 14 недель умеренно «занималась», а третья – совершила 45-минутную «пробежку» перед началом эксперимента.<br>
+                        После чего все мыши были заражены вирусом гриппа.<br>
+                        Как и предполагали учёные, особи с хорошей физической подготовкой показали более высокую сопротивляемость заболеванию, и симптомы у них проявлялись в меньшей степени.<br>
+                        Результаты третьей группы оказались лучше, чем у первой, однако эффект от нерегулярных нагрузок также был недолгосрочным. То есть, физические нагрузки положительно сказались на состоянии иммунитета.<br>
+
+                        К подобным выводам пришли и в университете Северной Каролины. В рамках исследования 1002 взрослых от 18 до 85 лет отчитывались о своём самочувствии на протяжении 12 недель – в разгар сезона гриппа.<br>
+                        Кроме того, испытуемые отмечали и уровень своей активности. В результате, среди тех, кто занимался пять раз в неделю и чаще, симптомы ОРВИ наблюдались на 43% реже, чем у тех, кто проводил одну и менее тренировок.<br>
+                    </p>
+            </td>
+            <td align="left">
+                <img src="https://img.championat.com/s/735x490/news/big/j/p/kak-sport-vlijaet-na-immunitet_1602593860198807772.jpg" width="500" height="350" style="background-color:">
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="padding:10px">
+<div align="center" style="background-color:rgb(180, 180, 180); height:50px;">
+    <p align="center">Место под рекламу</p>
+</div>
+</div>
+
+</body>
+</html>
